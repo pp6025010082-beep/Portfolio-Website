@@ -1,0 +1,121 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  height: 100%;
+  transition: transform var(--duration-base) var(--ease-standard),
+    box-shadow var(--duration-base) var(--ease-standard);
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: var(--shadow-lg);
+}
+
+.imageWrap {
+  aspect-ratio: 16 / 10;
+  background-color: var(--color-bg-alt);
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--duration-slow) var(--ease-standard);
+}
+
+.card:hover .image {
+  transform: scale(1.05);
+}
+
+.imageFallback {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  background-color: var(--color-primary-light);
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: var(--space-5);
+  gap: var(--space-3);
+}
+
+.title {
+  font-size: 1.15rem;
+}
+
+.description {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  flex: 1;
+}
+
+.techList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.techChip {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  background-color: #e6fbfa;
+  padding: 0.2rem var(--space-3);
+  border-radius: 999px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-top: var(--space-2);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--color-border);
+}
+
+.detailsBtn {
+  font-family: var(--font-base);
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--color-primary);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: color var(--duration-fast) var(--ease-standard);
+}
+
+.detailsBtn:hover {
+  color: var(--color-primary-dark);
+  text-decoration: underline;
+}
+
+.externalLinks {
+  display: flex;
+  gap: var(--space-4);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
+.externalLinks a {
+  transition: color var(--duration-fast) var(--ease-standard);
+}
+
+.externalLinks a:hover {
+  color: var(--color-primary);
+}

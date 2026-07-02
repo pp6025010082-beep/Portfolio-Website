@@ -194,4 +194,5 @@ _Add screenshots of the deployed site here before submission (Home, Projects, Co
 
 ## 18. Author
 
-Built by [Your Name] as part of a Web Development final assessment.
+Built by Phok Phallaoudom 
+

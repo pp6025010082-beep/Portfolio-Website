@@ -1,41 +1,109 @@
 .card {
+  --card-accent: var(--color-primary);
+
   background-color: var(--color-surface);
   border: 1px solid var(--color-border);
+  border-top: 3px solid var(--card-accent);
   border-radius: var(--radius-lg);
   padding: var(--space-5);
   height: 100%;
   transition: transform var(--duration-base) var(--ease-standard),
-    box-shadow var(--duration-base) var(--ease-standard),
-    border-color var(--duration-base) var(--ease-standard);
+    box-shadow var(--duration-base) var(--ease-standard);
 }
 
 .card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-md);
-  border-color: var(--color-primary-light);
+}
+
+.variant1 {
+  --card-accent: var(--color-accent);
+}
+
+.variant2 {
+  --card-accent: var(--color-tertiary);
+}
+
+.variant3 {
+  --card-accent: var(--color-quaternary);
 }
 
 .category {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
   font-size: 1.05rem;
   margin-bottom: var(--space-4);
 }
 
+.dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: var(--card-accent);
+  flex-shrink: 0;
+}
+
 .list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: var(--space-2);
 }
 
-.chip {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--color-primary-dark);
-  background-color: var(--color-primary-light);
-  padding: var(--space-2) var(--space-3);
-  border-radius: 999px;
-  transition: transform var(--duration-fast) var(--ease-standard);
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid var(--color-border);
 }
 
-.chip:hover {
-  transform: translateY(-2px);
+.row:last-child {
+  border-bottom: none;
+}
+
+.nameGroup {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-width: 0;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.name {
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  color: var(--color-text);
+}
+
+.badge {
+  flex-shrink: 0;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+}
+
+.badge.advanced {
+  color: var(--color-primary-dark);
+  background-color: var(--color-primary-light);
+}
+
+.badge.intermediate {
+  color: var(--color-accent-dark);
+  background-color: var(--color-accent-light);
+}
+
+.badge.learning {
+  color: var(--color-quaternary-dark);
+  background-color: var(--color-quaternary-light);
 }

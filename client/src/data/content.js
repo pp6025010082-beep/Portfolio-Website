@@ -15,10 +15,12 @@ export const profile = {
 };
 
 export const about = {
+  headline: "Software Engineering Student | Full-Stack Developer",
   paragraphs: [
     "I'm currently completing my degree in Software Engineering, where I've focused on full-stack web development, data structures, and software design principles.",
     "I'm drawn to problems that sit at the intersection of good engineering and good user experience — I like writing code that is easy to maintain as much as I like building interfaces that feel simple to use.",
     "Outside of coursework, I enjoy contributing to small open-source tools, participating in hackathons, and exploring new frameworks in my own side projects.",
+    "My goal is to grow into a full-stack software engineer — right now that means chasing internship and junior developer opportunities where I can keep learning while contributing real, shipped work.",
   ],
   strengths: [
     "Problem solving & debugging",
@@ -29,30 +31,46 @@ export const about = {
   values: ["Curiosity", "Reliability", "Continuous learning", "Collaboration"],
 };
 
+const DEVICON = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons";
+
+// Skill levels are self-assessed placeholders — one of "advanced", "intermediate", "learning".
+// Change each one to match your real level before submitting.
 export const skillGroups = [
   {
     category: "Programming Languages",
-    skills: ["JavaScript (ES6+)", "Python", "Java", "C++"],
+    skills: [
+      { name: "JavaScript (ES6+)", level: "learning", icon: `${DEVICON}/javascript/javascript-plain.svg` },
+      { name: "Python", level: "learning", icon: `${DEVICON}/python/python-plain.svg` },
+      { name: "Java", level: "learning", icon: `${DEVICON}/java/java-plain.svg` },
+      { name: "C++", level: "learning", icon: `${DEVICON}/cplusplus/cplusplus-plain.svg` },
+    ],
   },
   {
-    category: "Front-End",
-    skills: ["React", "HTML5", "CSS3", "React Router"],
+    category: "Web Development",
+    skills: [
+      { name: "React", level: "learning", icon: `${DEVICON}/react/react-original.svg` },
+      { name: "HTML5", level: "learning", icon: `${DEVICON}/html5/html5-plain.svg` },
+      { name: "CSS3", level: "learning", icon: `${DEVICON}/css3/css3-plain.svg` },
+      { name: "React Router", level: "learning", icon: "https://cdn.simpleicons.org/reactrouter" },
+    ],
   },
   {
-    category: "Back-End",
-    skills: ["Node.js", "Express", "RESTful APIs"],
+    category: "Database & Backend",
+    skills: [
+      { name: "Node.js", level: "learning", icon: `${DEVICON}/nodejs/nodejs-plain.svg` },
+      { name: "Express", level: "learning", icon: `${DEVICON}/express/express-original.svg` },
+      { name: "RESTful APIs", level: "learning" },
+      { name: "MongoDB", level: "learning", icon: `${DEVICON}/mongodb/mongodb-plain.svg` },
+      { name: "MySQL", level: "learning", icon: `${DEVICON}/mysql/mysql-original.svg` },
+    ],
   },
   {
-    category: "Databases",
-    skills: ["MongoDB", "MySQL"],
-  },
-  {
-    category: "Cloud & DevOps",
-    skills: ["AWS Amplify", "AWS EC2", "AWS S3"],
-  },
-  {
-    category: "Tools & Practices",
-    skills: ["Git & GitHub", "Postman", "Agile/Scrum", "Figma"],
+    category: "Tools & Technology",
+    skills: [
+      { name: "Git & GitHub", level: "learning", icon: `${DEVICON}/github/github-original.svg` },
+      { name: "Postman", level: "learning", icon: `${DEVICON}/postman/postman-plain.svg` },
+      { name: "Figma", level: "learning", icon: `${DEVICON}/figma/figma-plain.svg` },
+    ],
   },
 ];
 

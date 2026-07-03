@@ -2,62 +2,53 @@
   padding-block: var(--space-9);
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: 1.4fr 1fr;
-  gap: var(--space-8);
-  align-items: start;
-}
-
-.info {
-  background-color: var(--color-bg-alt);
+.card {
+  max-width: 620px;
+  margin-inline: auto;
+  background-color: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
-  padding: var(--space-6);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-7);
 }
 
-.infoTitle {
-  font-size: 1rem;
-  margin-bottom: var(--space-4);
+.cardTitle {
+  font-size: 1.15rem;
+  margin-bottom: var(--space-5);
 }
 
-.linkList {
+.divider {
+  height: 1px;
+  background-color: var(--color-border);
+  margin-block: var(--space-6);
+}
+
+.linkRow {
   display: flex;
-  flex-direction: column;
-  gap: var(--space-3);
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-4);
 }
 
 .linkItem {
-  display: flex;
-  flex-direction: column;
-  padding: var(--space-3) var(--space-4);
-  border-radius: var(--radius-md);
-  background-color: var(--color-surface);
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--color-primary);
+  padding: 0.4rem 0.9rem;
   border: 1px solid var(--color-border);
-  transition: transform var(--duration-fast) var(--ease-standard),
-    border-color var(--duration-fast) var(--ease-standard);
+  border-radius: var(--radius-md);
+  transition: border-color var(--duration-fast) var(--ease-standard),
+    color var(--duration-fast) var(--ease-standard);
 }
 
 .linkItem:hover {
-  transform: translateX(4px);
   border-color: var(--color-primary);
+  color: var(--color-primary-dark);
 }
 
-.linkLabel {
-  font-size: 0.78rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: var(--color-text-muted);
-}
-
-.linkValue {
-  font-weight: 600;
-  color: var(--color-primary);
-}
-
-@media (max-width: 860px) {
-  .grid {
-    grid-template-columns: 1fr;
+@media (max-width: 640px) {
+  .card {
+    padding: var(--space-5);
   }
 }

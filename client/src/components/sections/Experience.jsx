@@ -29,7 +29,7 @@ export default function Experience() {
     <section id="experience" className={styles.section}>
       <div className="container">
         <FadeInSection>
-          <SectionHeading eyebrow="Experience" title="Education & Experience" />
+          <SectionHeading title="Education & Experience" />
         </FadeInSection>
 
         <div className={styles.columns}>

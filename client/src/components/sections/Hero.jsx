@@ -8,9 +8,14 @@ export default function Hero() {
     <section className={styles.hero}>
       <div className={`container ${styles.inner}`}>
         <div className={styles.text}>
-          <span className={styles.greeting}>Hello, I'm</span>
+          <p className={styles.codeLine} aria-hidden="true">
+            <span className={styles.kw}>const</span> <span className={styles.fn}>developer</span> = "
+            {profile.name}";
+          </p>
           <h1 className={styles.name}>{profile.name}</h1>
-          <p className={styles.title}>{profile.title}</p>
+          <p className={styles.title}>
+            <span className={styles.prompt}>&gt;</span> {profile.title}
+          </p>
           <p className={styles.tagline}>{profile.tagline}</p>
 
           <div className={styles.actions}>
@@ -31,6 +36,7 @@ export default function Hero() {
             width="260"
             height="320"
           />
+          <span className={styles.avatarCaption}>profile.jpg — 260×320</span>
         </div>
       </div>
     </section>

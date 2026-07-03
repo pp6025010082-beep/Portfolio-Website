@@ -33,3 +33,11 @@
 .links a:hover {
   color: var(--color-primary);
 }
+
+.adminLink {
+  opacity: 0.6;
+}
+
+.adminLink:hover {
+  opacity: 1;
+}

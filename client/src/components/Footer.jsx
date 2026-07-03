@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { profile } from "../data/content";
 import styles from "./Footer.module.css";
 
@@ -23,6 +24,11 @@ export default function Footer() {
           </li>
           <li>
             <a href={`mailto:${profile.email}`}>Email</a>
+          </li>
+          <li>
+            <Link to="/admin" className={styles.adminLink}>
+              Admin
+            </Link>
           </li>
         </ul>
       </div>

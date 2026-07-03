@@ -64,6 +64,7 @@ The React app calls the Express API over HTTP (JSON). Express validates input wi
 | title | String | required, 3–120 chars |
 | description | String | required, 10–500 chars |
 | problem | String | optional |
+| mainFeatures | [String] | optional |
 | technologies | [String] | optional |
 | imageUrl, githubUrl, liveUrl | String | optional |
 | contribution, challenges, lessonsLearned | String | optional |

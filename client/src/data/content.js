@@ -107,20 +107,4 @@ export const experience = [
     place: "Punareay Restaurant",
     period: "2015 — 2016",
   },
-  {
-    type: "Competition",
-    title: "University Hackathon — 2nd Place",
-    place: "Your University",
-    period: "2025",
-    description:
-      "Built a full-stack web app in 24 hours as part of a 3-person team, presenting the final product to industry judges.",
-  },
-  {
-    type: "Certification",
-    title: "AWS Cloud Practitioner (in progress)",
-    place: "Amazon Web Services",
-    period: "2026",
-    description:
-      "Studying cloud fundamentals, deployment services, and cloud security basics.",
-  },
 ];

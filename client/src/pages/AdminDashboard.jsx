@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { projectsService } from "../services/projectsService";
 import { ApiError } from "../services/api";
 import { useAdminAuth } from "../context/AdminAuthContext";
@@ -18,6 +18,13 @@ export default function AdminDashboard() {
   const [isFormOpen, setIsFormOpen] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [actionError, setActionError] = useState("");
+  const errorRef = useRef(null);
+
+  useEffect(() => {
+    if (actionError) {
+      errorRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  }, [actionError]);
 
   const loadProjects = async () => {
     setStatus("loading");
@@ -96,8 +103,6 @@ export default function AdminDashboard() {
       </header>
 
       <main className="container">
-        {actionError && <ErrorMessage message={actionError} />}
-
         {status === "loading" && <LoadingIndicator label="Loading projects..." />}
         {status === "error" && <ErrorMessage message={errorMessage} onRetry={loadProjects} />}
 
@@ -149,6 +154,11 @@ export default function AdminDashboard() {
 
       {isFormOpen && (
         <Modal title={editingProject ? "Edit Project" : "Add Project"} onClose={() => setIsFormOpen(false)}>
+          {actionError && (
+            <div ref={errorRef}>
+              <ErrorMessage message={actionError} />
+            </div>
+          )}
           <ProjectForm
             initialProject={editingProject}
             onSubmit={handleSubmit}

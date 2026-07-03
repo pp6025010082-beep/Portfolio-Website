@@ -1,6 +1,8 @@
 :root {
-  /* Font */
-  --font-base: "Source Sans Pro", "Source Sans 3", -apple-system, sans-serif;
+  /* Font — a single family used everywhere (headings, body, and code-styled UI bits) */
+  --font-base: "Oxanium", -apple-system, sans-serif;
+  --font-display: "Oxanium", -apple-system, sans-serif;
+  --font-mono: "Oxanium", -apple-system, sans-serif;
 
   /* Colors */
   --color-bg: #ffffff;
@@ -9,15 +11,18 @@
   --color-border: #e4e8ef;
   --color-text: #1c2333;
   --color-text-muted: #5b6472;
-  --color-primary: #2563eb;
-  --color-primary-dark: #1d4ed8;
-  --color-primary-light: #eaf1ff;
+  --color-primary: #e0483c;
+  --color-primary-dark: #c2372c;
+  --color-primary-light: #fce4e1;
   --color-accent: #0ea5a4;
   --color-accent-dark: #0f766e;
   --color-accent-light: #e6fbfa;
   --color-tertiary: #7c3aed;
   --color-tertiary-dark: #6d28d9;
   --color-tertiary-light: #f3e8ff;
+  --color-quaternary: #b8802a;
+  --color-quaternary-dark: #8a5f1e;
+  --color-quaternary-light: #f8ecd8;
   --color-danger: #dc2626;
   --color-success: #16a34a;
 

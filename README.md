@@ -168,45 +168,28 @@ Visit `/admin`, log in with the password set in `server/.env` (`ADMIN_PASSWORD`)
 
 Personal details (name, bio, skills, education/experience, links) are placeholders meant to be edited in one place: `client/src/data/content.js`. Replace the sample project entries either by editing `server/scripts/seed.js` and re-seeding, or by using the admin dashboard directly.
 
-## 13. Screenshots
-
-**Home**
-![Home](docs/screenshots/home.png)
-
-**Projects**
-![Projects](docs/screenshots/projects.png)
-
-**Contact**
-![Contact](docs/screenshots/contact.png)
-
-**Admin Dashboard**
-![Admin Dashboard](docs/screenshots/admin-dashboard.png)
-
-**Mobile View**
-![Mobile Home](docs/screenshots/mobile-home.png)
-
-## 14. Live Website URL
+## 13. Live Website URL
 
 https://main.d3kh13lu42hjde.amplifyapp.com
 
-## 15. GitHub Repository URL
+## 14. GitHub Repository URL
 
 https://github.com/pp6025010082-beep/Portfolio-Website
 
-## 16. Known Limitations
+## 15. Known Limitations
 
 - Admin authentication uses a single shared password rather than per-user accounts.
 - No image upload; project images are linked by URL.
 - No automated test suite included.
 
-## 17. Future Improvements
+## 16. Future Improvements
 
 - Add per-user admin accounts with hashed credentials.
 - Add image upload support (e.g. via S3).
 - Add email notifications when a contact message is submitted.
 - Add automated tests (unit + integration) and CI.
 
-## 18. Author
+## 17. Author
 
 Built by Phok Phallaoudom 
 

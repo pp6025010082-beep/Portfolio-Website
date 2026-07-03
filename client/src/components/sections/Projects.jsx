@@ -52,9 +52,9 @@ export default function Projects() {
 
         {status === "success" && projects.length > 0 && (
           <div className={styles.grid}>
-            {projects.map((project) => (
+            {projects.map((project, index) => (
               <FadeInSection key={project._id}>
-                <ProjectCard project={project} onViewDetails={setSelectedProject} />
+                <ProjectCard project={project} index={index} onViewDetails={setSelectedProject} />
               </FadeInSection>
             ))}
           </div>

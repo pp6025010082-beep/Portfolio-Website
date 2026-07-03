@@ -1,10 +1,13 @@
 import styles from "./ProjectCard.module.css";
 
-export default function ProjectCard({ project, onViewDetails }) {
+const VARIANTS = [styles.variant0, styles.variant1, styles.variant2];
+
+export default function ProjectCard({ project, index = 0, onViewDetails }) {
   const { title, description, imageUrl, technologies = [], githubUrl, liveUrl } = project;
+  const variant = VARIANTS[index % VARIANTS.length];
 
   return (
-    <article className={styles.card}>
+    <article className={`${styles.card} ${variant}`}>
       <div className={styles.imageWrap}>
         {imageUrl ? (
           <img src={imageUrl} alt={`Screenshot of ${title}`} className={styles.image} loading="lazy" />

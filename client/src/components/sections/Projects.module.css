@@ -1,5 +1,6 @@
 .section {
   padding-block: var(--space-9);
+  background-color: var(--color-bg-alt);
 }
 
 .grid {

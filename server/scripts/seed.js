@@ -14,7 +14,7 @@ const sampleProjects = [
       "Protected admin dashboard for full CRUD management of projects",
     ],
     technologies: ["React", "Node.js", "Express", "MongoDB"],
-    imageUrl: "",
+    imageUrl: "/projects/portfolio-website.png",
     githubUrl: "https://github.com/pp6025010082-beep/Portfolio-Website",
     liveUrl: "",
     contribution: "Designed and built the entire application independently, front end to back end.",

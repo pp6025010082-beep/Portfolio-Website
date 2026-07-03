@@ -26,6 +26,16 @@
   font-size: 0.95rem;
 }
 
+.featureList {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--color-text);
+  font-size: 0.95rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
 .techList {
   display: flex;
   flex-wrap: wrap;

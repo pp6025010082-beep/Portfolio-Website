@@ -9,11 +9,22 @@ const FIELDS = [
 ];
 
 export default function ProjectDetails({ project }) {
-  const { description, technologies = [], githubUrl, liveUrl } = project;
+  const { description, mainFeatures = [], technologies = [], githubUrl, liveUrl } = project;
 
   return (
     <div className={styles.wrap}>
       <p className={styles.description}>{description}</p>
+
+      {mainFeatures.length > 0 && (
+        <div className={styles.block}>
+          <h4 className={styles.blockTitle}>Main Features</h4>
+          <ul className={styles.featureList}>
+            {mainFeatures.map((feature) => (
+              <li key={feature}>{feature}</li>
+            ))}
+          </ul>
+        </div>
+      )}
 
       {technologies.length > 0 && (
         <div className={styles.block}>

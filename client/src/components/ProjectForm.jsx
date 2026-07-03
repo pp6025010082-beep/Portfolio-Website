@@ -6,6 +6,7 @@ const EMPTY_PROJECT = {
   title: "",
   description: "",
   problem: "",
+  mainFeatures: "",
   technologies: "",
   imageUrl: "",
   githubUrl: "",
@@ -21,6 +22,7 @@ function toFormValues(project) {
   return {
     ...EMPTY_PROJECT,
     ...project,
+    mainFeatures: Array.isArray(project.mainFeatures) ? project.mainFeatures.join("\n") : "",
     technologies: Array.isArray(project.technologies) ? project.technologies.join(", ") : "",
   };
 }
@@ -53,6 +55,10 @@ export default function ProjectForm({ initialProject, onSubmit, onCancel, isSubm
 
     onSubmit({
       ...values,
+      mainFeatures: values.mainFeatures
+        .split("\n")
+        .map((feature) => feature.trim())
+        .filter(Boolean),
       technologies: values.technologies
         .split(",")
         .map((tech) => tech.trim())
@@ -77,6 +83,11 @@ export default function ProjectForm({ initialProject, onSubmit, onCancel, isSubm
       <div className={styles.field}>
         <label htmlFor="problem">Problem Addressed</label>
         <textarea id="problem" name="problem" rows={2} value={values.problem} onChange={handleChange} />
+      </div>
+
+      <div className={styles.field}>
+        <label htmlFor="mainFeatures">Main Features (one per line)</label>
+        <textarea id="mainFeatures" name="mainFeatures" rows={3} value={values.mainFeatures} onChange={handleChange} />
       </div>
 
       <div className={styles.row}>

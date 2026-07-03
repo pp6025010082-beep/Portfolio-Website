@@ -17,6 +17,7 @@ const projectSchema = new mongoose.Schema(
       maxlength: [500, "Description must be under 500 characters."],
     },
     problem: { type: String, trim: true, maxlength: 1000 },
+    mainFeatures: { type: [String], default: [] },
     technologies: { type: [String], default: [] },
     imageUrl: { type: String, trim: true },
     githubUrl: { type: String, trim: true },

@@ -170,15 +170,28 @@ Personal details (name, bio, skills, education/experience, links) are placeholde
 
 ## 13. Screenshots
 
-_Add screenshots of the deployed site here before submission (Home, Projects, Contact, Admin dashboard, mobile view)._
+**Home**
+![Home](docs/screenshots/home.png)
+
+**Projects**
+![Projects](docs/screenshots/projects.png)
+
+**Contact**
+![Contact](docs/screenshots/contact.png)
+
+**Admin Dashboard**
+![Admin Dashboard](docs/screenshots/admin-dashboard.png)
+
+**Mobile View**
+![Mobile Home](docs/screenshots/mobile-home.png)
 
 ## 14. Live Website URL
 
-`TODO: add your deployed URL here after deployment`
+https://main.d3kh13lu42hjde.amplifyapp.com
 
 ## 15. GitHub Repository URL
 
-`TODO: add your GitHub repository URL here`
+https://github.com/pp6025010082-beep/Portfolio-Website
 
 ## 16. Known Limitations
 

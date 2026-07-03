@@ -33,6 +33,30 @@
   --card-accent-soft: var(--color-tertiary-light);
 }
 
+.pathBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+  padding: var(--space-2) var(--space-4);
+  border-bottom: 1px dashed var(--color-border);
+  background-color: var(--color-bg-alt);
+}
+
+.featuredBadge {
+  font-weight: 700;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background-color: var(--card-accent);
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+}
+
 .imageWrap {
   aspect-ratio: 16 / 10;
   background-color: var(--color-bg-alt);
@@ -87,12 +111,13 @@
 }
 
 .techChip {
-  font-size: 0.78rem;
-  font-weight: 700;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
   color: var(--card-accent-dark);
   background-color: var(--card-accent-soft);
   padding: 0.2rem var(--space-3);
-  border-radius: 999px;
+  border-radius: 4px;
 }
 
 .actions {
@@ -124,16 +149,25 @@
 
 .externalLinks {
   display: flex;
-  gap: var(--space-4);
-  font-size: 0.85rem;
+  gap: var(--space-2);
+}
+
+.iconLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
   font-weight: 600;
   color: var(--color-text-muted);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 0.25rem 0.55rem;
+  transition: color var(--duration-fast) var(--ease-standard),
+    border-color var(--duration-fast) var(--ease-standard);
 }
 
-.externalLinks a {
-  transition: color var(--duration-fast) var(--ease-standard);
-}
-
-.externalLinks a:hover {
-  color: var(--color-primary);
+.iconLink:hover {
+  color: var(--card-accent);
+  border-color: var(--card-accent);
 }

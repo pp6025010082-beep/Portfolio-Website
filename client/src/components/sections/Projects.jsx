@@ -37,7 +37,6 @@ export default function Projects() {
       <div className="container">
         <FadeInSection>
           <SectionHeading
-            eyebrow="Projects"
             title="Things I've Built"
             subtitle="A selection of academic and personal projects that show how I approach problems end to end."
           />

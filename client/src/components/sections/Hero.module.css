@@ -1,9 +1,29 @@
 .hero {
+  position: relative;
+  overflow: hidden;
   padding-block: var(--space-9) var(--space-8);
   background: linear-gradient(180deg, var(--color-bg-alt) 0%, var(--color-bg) 100%);
 }
 
+.hero::before {
+  content: "";
+  position: absolute;
+  top: -140px;
+  right: -140px;
+  width: 460px;
+  height: 460px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(37, 99, 235, 0.16),
+    rgba(14, 165, 164, 0.08) 60%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
 .inner {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -17,13 +37,15 @@
 
 .greeting {
   display: inline-block;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--color-primary);
   margin-bottom: var(--space-2);
 }
 
 .name {
-  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  font-size: clamp(2.4rem, 5.5vw, 3.6rem);
+  font-weight: 800;
+  letter-spacing: -0.01em;
   margin-bottom: var(--space-2);
 }
 
@@ -48,16 +70,21 @@
 
 .avatarWrap {
   flex-shrink: 0;
+  padding: var(--space-2);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  animation: riseIn var(--duration-slow) var(--ease-standard);
 }
 
 .avatar {
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
+  display: block;
+  width: 260px;
+  height: 320px;
+  border-radius: var(--radius-md);
   object-fit: cover;
   object-position: center 15%;
-  box-shadow: var(--shadow-lg);
-  animation: riseIn var(--duration-slow) var(--ease-standard);
 }
 
 @keyframes riseIn {
@@ -82,7 +109,7 @@
   }
 
   .avatar {
-    width: 160px;
-    height: 160px;
+    width: 180px;
+    height: 220px;
   }
 }

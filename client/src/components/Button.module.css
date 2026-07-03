@@ -27,7 +27,7 @@
 }
 
 .primary {
-  background-color: var(--color-primary);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
   color: #fff;
   box-shadow: var(--shadow-sm);
 }

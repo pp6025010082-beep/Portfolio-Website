@@ -8,7 +8,7 @@ export default function Hero() {
     <section className={styles.hero}>
       <div className={`container ${styles.inner}`}>
         <div className={styles.text}>
-          <span className={styles.greeting}>Hi, I'm</span>
+          <span className={styles.greeting}>Hello, I'm</span>
           <h1 className={styles.name}>{profile.name}</h1>
           <p className={styles.title}>{profile.title}</p>
           <p className={styles.tagline}>{profile.tagline}</p>
@@ -20,9 +20,6 @@ export default function Hero() {
             <Button as="a" href={profile.resumeUrl} variant="secondary" download>
               Download My CV
             </Button>
-            <Button as="a" href="#contact" variant="ghost">
-              Contact Me
-            </Button>
           </div>
         </div>
 
@@ -31,8 +28,8 @@ export default function Hero() {
             className={styles.avatar}
             src={profileImage}
             alt=""
-            width="220"
-            height="220"
+            width="260"
+            height="320"
           />
         </div>
       </div>

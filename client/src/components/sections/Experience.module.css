@@ -3,44 +3,81 @@
   background-color: var(--color-bg-alt);
 }
 
-.timeline {
-  position: relative;
-  max-width: 720px;
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-8);
+  max-width: 900px;
   margin: 0 auto;
-  padding-left: var(--space-6);
-  border-left: 2px solid var(--color-border);
+}
+
+.column:last-child {
+  border-left: 1px solid var(--color-border);
+  padding-left: var(--space-8);
+}
+
+.columnTitle {
+  position: relative;
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: var(--space-6);
+  padding-bottom: var(--space-3);
+}
+
+.columnTitle::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--color-primary);
+}
+
+.column:last-child .columnTitle::after {
+  background: var(--color-accent);
+}
+
+.list {
   display: flex;
   flex-direction: column;
-  gap: var(--space-7);
+  gap: var(--space-6);
 }
 
 .item {
   position: relative;
+  padding-left: var(--space-4);
+  border-left: 2px solid var(--color-border);
 }
 
-.dot {
+.item::before {
+  content: "";
   position: absolute;
-  left: calc(var(--space-6) * -1 - 6px);
+  left: -6px;
   top: 4px;
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
-  background-color: var(--color-primary);
+  background: var(--color-primary);
   box-shadow: 0 0 0 4px var(--color-primary-light);
 }
 
-.type {
-  display: inline-block;
-  font-size: 0.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--color-primary);
+.column:last-child .item::before {
+  background: var(--color-accent);
+  box-shadow: 0 0 0 4px var(--color-accent-light);
+}
+
+.itemTitle {
+  font-size: 1.1rem;
   margin-bottom: var(--space-1);
 }
 
-.title {
-  font-size: 1.1rem;
+
+.degree {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-text);
   margin-bottom: var(--space-1);
 }
 
@@ -54,4 +91,18 @@
 .description {
   color: var(--color-text-muted);
   font-size: 0.95rem;
+}
+
+@media (max-width: 720px) {
+  .columns {
+    grid-template-columns: 1fr;
+    gap: var(--space-7);
+  }
+
+  .column:last-child {
+    border-left: none;
+    padding-left: 0;
+    border-top: 1px solid var(--color-border);
+    padding-top: var(--space-7);
+  }
 }

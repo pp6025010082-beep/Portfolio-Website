@@ -128,7 +128,7 @@ cp server/.env.example server/.env
 
 | Variable | Description |
 |---|---|
-| PORT | Port the API listens on (default 5000) |
+| PORT | Port the API listens on (default 5050) |
 | MONGODB_URI | MongoDB connection string |
 | CLIENT_ORIGIN | Allowed front-end origin(s) for CORS |
 | ADMIN_PASSWORD | Password required to access `/admin` |
@@ -145,7 +145,7 @@ cp server/.env.example server/.env
 ```bash
 cd server
 npm install
-npm run dev        # starts the API with auto-restart on http://localhost:5000
+npm run dev        # starts the API with auto-restart on http://localhost:5050
 npm run seed        # optional: inserts sample projects into MongoDB
 ```
 
@@ -157,7 +157,7 @@ npm install
 npm run dev         # starts Vite dev server on http://localhost:5173
 ```
 
-The dev server proxies `/api` requests to `http://localhost:5000` (see `client/vite.config.js`), so both servers should be running locally at the same time.
+The dev server proxies `/api` requests to `http://localhost:5050` (see `client/vite.config.js`), so both servers should be running locally at the same time.
 
 ## 11. Admin Dashboard
 

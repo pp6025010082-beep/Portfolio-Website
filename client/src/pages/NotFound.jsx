@@ -8,7 +8,7 @@ export default function NotFound() {
       <div className="container">
         <p className={styles.code}>404</p>
         <h1 className={styles.title}>Page not found</h1>
-        <p className={styles.text}>The page you're looking for doesn't exist or has been moved.</p>
+        <p className={styles.text}>The page you're looking for doesn't exist.</p>
         <Button as={Link} to="/">
           Back to Home
         </Button>

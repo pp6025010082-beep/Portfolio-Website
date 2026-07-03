@@ -8,7 +8,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={`container ${styles.inner}`}>
         <p className={styles.copy}>
-          &copy; {year} {profile.name}. Built with React, Node.js, and MongoDB.
+          &copy; {year} {profile.name}.
         </p>
         <ul className={styles.links}>
           <li>
@@ -17,8 +17,8 @@ export default function Footer() {
             </a>
           </li>
           <li>
-            <a href={profile.linkedin} target="_blank" rel="noreferrer">
-              LinkedIn
+            <a href={profile.telegram} target="_blank" rel="noreferrer">
+              Telegram
             </a>
           </li>
           <li>

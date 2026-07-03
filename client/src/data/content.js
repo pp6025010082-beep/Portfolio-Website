@@ -7,9 +7,9 @@ export const profile = {
   tagline: "I build clean, reliable, full-stack web applications.",
   intro:
     "I'm a software engineering student who enjoys turning ideas into working products — from responsive front ends to REST APIs and databases. I'm currently looking for internship and junior developer opportunities.",
-  email: "you@example.com",
-  github: "https://github.com/your-username",
-  linkedin: "https://www.linkedin.com/in/your-username",
+  email: "phallaoudomphok@gmail.com",
+  github: "https://github.com/pp6025010082-beep",
+  telegram: "https://t.me/oxdom1",
   resumeUrl: "/resume.pdf",
   location: "Phnom Penh, Cambodia",
 };
@@ -59,19 +59,35 @@ export const skillGroups = [
 export const experience = [
   {
     type: "Education",
-    title: "B.Sc. in Software Engineering",
-    place: "Your University",
-    period: "2022 — 2026",
-    description:
-      "Relevant coursework: Web Development, Data Structures & Algorithms, Database Systems, Software Engineering Practices.",
+    title: "Camtech University",
+    degree: "B.Sc. in Software Engineering",
+    place: "Phnom Penh, Cambodia",
+    period: "2025 — 2027 (in progress)",
+  },
+  {
+    type: "Education",
+    title: "Paragon University",
+    degree: "Computer Science",
+    place: "Phnom Penh, Cambodia",
+    period: "2023 — 2024",
   },
   {
     type: "Experience",
-    title: "Web Development Intern",
-    place: "Example Company",
-    period: "Jun 2025 — Aug 2025",
-    description:
-      "Built and maintained internal tools using React and Node.js, collaborated with a small team using Git and Agile workflows.",
+    title: "Software Engineering Intern",
+    place: "Camtech University",
+    period: "2025 — 2027",
+  },
+  {
+    type: "Experience",
+    title: "Manager",
+    place: "Punareay Restaurant",
+    period: "2016 — 2022",
+  },
+  {
+    type: "Experience",
+    title: "Dishwasher",
+    place: "Punareay Restaurant",
+    period: "2015 — 2016",
   },
   {
     type: "Competition",

@@ -7,7 +7,7 @@ import styles from "./Contact.module.css";
 const LINKS = [
   { label: "Email", value: profile.email, href: `mailto:${profile.email}` },
   { label: "GitHub", value: "View profile", href: profile.github },
-  { label: "LinkedIn", value: "View profile", href: profile.linkedin },
+  { label: "Telegram", value: "@oxdom1", href: profile.telegram },
 ];
 
 export default function Contact() {

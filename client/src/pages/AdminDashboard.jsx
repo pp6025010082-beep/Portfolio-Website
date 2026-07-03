@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { projectsService } from "../services/projectsService";
 import { ApiError } from "../services/api";
 import { useAdminAuth } from "../context/AdminAuthContext";
@@ -11,6 +12,7 @@ import styles from "./AdminDashboard.module.css";
 
 export default function AdminDashboard() {
   const { token, logout } = useAdminAuth();
+  const navigate = useNavigate();
   const [projects, setProjects] = useState([]);
   const [status, setStatus] = useState("loading");
   const [errorMessage, setErrorMessage] = useState("");
@@ -72,6 +74,11 @@ export default function AdminDashboard() {
     }
   };
 
+  const handleLogout = () => {
+    logout();
+    navigate("/");
+  };
+
   const handleDelete = async (project) => {
     const confirmed = window.confirm(`Delete "${project.title}"? This cannot be undone.`);
     if (!confirmed) return;
@@ -94,7 +101,7 @@ export default function AdminDashboard() {
               <Button variant="secondary" onClick={openCreateForm}>
                 Add Project
               </Button>
-              <Button variant="ghost" onClick={logout}>
+              <Button variant="ghost" onClick={handleLogout}>
                 Log Out
               </Button>
             </div>

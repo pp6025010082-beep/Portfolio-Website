@@ -78,7 +78,7 @@ The React app calls the Express API over HTTP (JSON). Express validates input wi
 | name | String | required, 2–100 chars |
 | email | String | required, valid email format |
 | subject | String | required, 3–150 chars |
-| message | String | required, 10–2000 chars |
+| message | String | required, 10–200 chars |
 | createdAt | Date | auto-generated |
 
 Messages are never exposed on a public endpoint — `GET /api/messages` requires an admin session.
@@ -105,7 +105,7 @@ Responses use JSON with appropriate status codes (200, 201, 400, 401, 404, 500).
 
 ### Prerequisites
 - Node.js 18+
-- A MongoDB connection string (local MongoDB or a free [MongoDB Atlas](https://www.mongodb.com/atlas) cluster)
+- A MongoDB connection string 
 
 ### Clone and install
 
@@ -146,8 +146,8 @@ cp server/.env.example server/.env
 ```bash
 cd server
 npm install
-npm run dev        # starts the API with auto-restart on http://localhost:5050
-npm run seed        # optional: inserts sample projects into MongoDB
+npm run dev      
+npm run seed     
 ```
 
 ## 10. Running the Frontend
@@ -155,7 +155,7 @@ npm run seed        # optional: inserts sample projects into MongoDB
 ```bash
 cd client
 npm install
-npm run dev         # starts Vite dev server on http://localhost:5173
+npm run dev      
 ```
 
 The dev server proxies `/api` requests to `http://localhost:5050` (see `client/vite.config.js`), so both servers should be running locally at the same time.

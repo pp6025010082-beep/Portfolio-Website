@@ -17,7 +17,6 @@ export default function Contact() {
         <FadeInSection>
           <SectionHeading
             title="Let's Work Together"
-            subtitle="Have an opportunity or question? Send a message and I'll get back to you soon."
           />
         </FadeInSection>
 

@@ -34,7 +34,7 @@ function validate(values) {
 export default function ContactForm() {
   const [values, setValues] = useState(EMPTY_FORM);
   const [errors, setErrors] = useState({});
-  const [status, setStatus] = useState("idle"); // idle | submitting | success | error
+  const [status, setStatus] = useState("idle"); 
   const [serverError, setServerError] = useState("");
 
   const handleChange = (event) => {

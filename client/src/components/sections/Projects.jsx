@@ -36,10 +36,7 @@ export default function Projects() {
     <section id="projects" className={styles.section}>
       <div className="container">
         <FadeInSection>
-          <SectionHeading
-            title="Things I've Built"
-            subtitle="A selection of academic and personal projects that show how I approach problems end to end."
-          />
+          <SectionHeading title="Things I've Built" />
         </FadeInSection>
 
         {status === "loading" && <LoadingIndicator label="Loading projects..." />}

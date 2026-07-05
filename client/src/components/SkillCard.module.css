@@ -7,13 +7,6 @@
   border-radius: var(--radius-lg);
   padding: var(--space-5);
   height: 100%;
-  transition: transform var(--duration-base) var(--ease-standard),
-    box-shadow var(--duration-base) var(--ease-standard);
-}
-
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-md);
 }
 
 .variant1 {

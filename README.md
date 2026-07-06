@@ -78,7 +78,7 @@ The React app calls the Express API over HTTP (JSON). Express validates input wi
 | name | String | required, 2–100 chars |
 | email | String | required, valid email format |
 | subject | String | required, 3–150 chars |
-| message | String | required, 10–200 chars |
+| message | String | required, 10–2000 chars |
 | createdAt | Date | auto-generated |
 
 Messages are never exposed on a public endpoint — `GET /api/messages` requires an admin session.

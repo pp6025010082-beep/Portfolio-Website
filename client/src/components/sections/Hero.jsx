@@ -8,15 +8,11 @@ export default function Hero() {
     <section className={styles.hero}>
       <div className={`container ${styles.inner}`}>
         <div className={styles.text}>
-          <p className={styles.codeLine} aria-hidden="true">
-            <span className={styles.kw}>const</span> <span className={styles.fn}>developer</span> = "
-            {profile.name}";
-          </p>
           <h1 className={styles.name}>{profile.name}</h1>
           <p className={styles.title}>
             <span className={styles.prompt}>&gt;</span> {profile.title}
           </p>
-          <p className={styles.tagline}>{profile.tagline}</p>
+          <p className={styles.tagline}>{profile.intro}</p>
 
           <div className={styles.actions}>
             <Button as="a" href="#projects" variant="primary">

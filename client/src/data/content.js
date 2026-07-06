@@ -17,12 +17,10 @@ export const about = {
   headline: "Software Engineering Student | Full-Stack Developer",
   paragraphs: [
     "I'm currently completing my degree in Software Engineering at Camtech University ,I focused on data structures, and software design principles.",
-    "I'm drawn to problems that sit at the intersection of good engineering and good user experience, I like writing code that is easy to maintain as much as I like building interfaces that feel simple to use.",
     "I work as I work from the moment I wake up to the moment I go to bed and when I'm not working I'm thinking about working.",
   ],
   strengths: [
     "Problem solving",
-    "Clean code",
     "Quick Thinker",
   ],
   values: ["Loyalty"],

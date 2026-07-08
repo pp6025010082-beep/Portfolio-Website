@@ -5,7 +5,7 @@ export const profile = {
   name: "Phok Phallaoudom",
   title: "Software Engineering Student",
   intro:
-    "I'm a software engineering student who enjoys turning ideas into working products — from responsive front ends to REST APIs and databases. I'm currently looking for internship and junior developer opportunities.",
+    "I'm a software engineering student who enjoy solving problem and interest in FINTECH. I'm currently looking for internship.",
   email: "phallaoudomphok@gmail.com",
   github: "https://github.com/pp6025010082-beep",
   telegram: "https://t.me/oxdom1",

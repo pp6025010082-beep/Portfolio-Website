@@ -166,7 +166,7 @@ Visit `/admin`, log in with the password set in `server/.env` (`ADMIN_PASSWORD`)
 
 ## 12. Editing Your Content
 
-Personal details (name, bio, skills, education/experience, links) are placeholders meant to be edited in one place: `client/src/data/content.js`. Replace the sample project entries either by editing `server/scripts/seed.js` and re-seeding, or by using the admin dashboard directly.
+Personal details are placeholders meant to be edited in one place: `client/src/data/content.js`. Replace the sample project entries either by editing `server/scripts/seed.js` and re-seeding, or by using the admin dashboard directly.
 
 ## 13. Screenshots
 
@@ -201,10 +201,10 @@ https://github.com/pp6025010082-beep/Portfolio-Website
 
 ## 17. Future Improvements
 
-- Add per-user admin accounts with hashed credentials.
-- Add image upload support (e.g. via S3).
+- Add image upload support 
 - Add email notifications when a contact message is submitted.
-- Add automated tests (unit + integration) and CI.
+- Add automated tests and CI.
+- Add Message dashboard in admin dashboard
 
 ## 18. Author
 

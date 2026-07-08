@@ -12,7 +12,7 @@ import styles from "./Projects.module.css";
 
 export default function Projects() {
   const [projects, setProjects] = useState([]);
-  const [status, setStatus] = useState("loading"); // loading | success | error
+  const [status, setStatus] = useState("loading");
   const [errorMessage, setErrorMessage] = useState("");
   const [selectedProject, setSelectedProject] = useState(null);
 

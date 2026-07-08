@@ -1,11 +1,8 @@
-// Central place to edit your personal portfolio content.
-// Replace these placeholder values with your own details.
-
 export const profile = {
   name: "Phok Phallaoudom",
   title: "Software Engineering Student",
   intro:
-    "I'm a software engineering student who enjoy solving problem and interest in FINTECH. I'm currently looking for internship.",
+    "I'm a software engineering student who enjoys solving problems and am interested in FinTech. I'm currently looking for internship opportunities.",
   email: "phallaoudomphok@gmail.com",
   github: "https://github.com/pp6025010082-beep",
   telegram: "https://t.me/oxdom1",

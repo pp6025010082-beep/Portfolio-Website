@@ -1,9 +1,5 @@
 import styles from "./Button.module.css";
 
-/**
- * Shared button used for CTAs, form submits, and admin actions.
- * variant: "primary" | "secondary" | "ghost" | "danger"
- */
 export default function Button({
   children,
   variant = "primary",

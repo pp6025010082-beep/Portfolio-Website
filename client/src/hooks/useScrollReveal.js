@@ -1,10 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 
-/**
- * Reveals an element with a fade/slide-in transition the first time it
- * scrolls into view. Reused by every section to keep the animation
- * behavior consistent across the page.
- */
 export function useScrollReveal({ threshold = 0.15 } = {}) {
   const ref = useRef(null);
   const [isVisible, setIsVisible] = useState(false);

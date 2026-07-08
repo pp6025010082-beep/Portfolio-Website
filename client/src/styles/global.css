@@ -84,7 +84,6 @@ ol {
   list-style: none;
 }
 
-/* Visible focus state for keyboard navigation */
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
@@ -96,7 +95,6 @@ select:focus-visible,
   border-radius: var(--radius-sm);
 }
 
-/* Skip link for keyboard users */
 .skip-link {
   position: absolute;
   left: -9999px;
@@ -126,7 +124,6 @@ select:focus-visible,
   }
 }
 
-/* Shared fade-in-on-scroll animation, toggled via IntersectionObserver hook */
 .fade-in-section {
   opacity: 0;
   transform: translateY(24px);
